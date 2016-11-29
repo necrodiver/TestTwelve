@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Scripts/jquery-3.1.1.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <style type="text/css">
+        .parent {
+            width:1000px;
+        }
+        .child{
+            width:180px;
+            height:250px;
+            margin-left:8px;
+            margin-top:6px;
+            border:2px solid gray;
+            background-color:#ebebeb;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent col-lg-12">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+    <script>
+        $(function () {
+            $('.parent').masonry({
+                itemSelector: '.child',
+                transitionDuration: '0.8s',
+                isAnimated: true
+            });
+        });
+    </script>
+</body>
+</html>
