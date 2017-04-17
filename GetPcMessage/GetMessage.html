@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+        function getBrowser() {
+            var browser = null;
+            var ua = window.navigator.userAgent;
+            if (/(iPhone|iPad|iPod|iOS)/i.test(ua)) {
+                browser = "iPhone|iPad|iPod|iOS";
+            } else if (/(Android)/i.test(ua)) {
+                browser = "Android";
+            } else if (window.ActiveXObject != undefined && /(MSIE)/i.test(ua)) {
+                var IE9 = IE10 = IE11 = false;
+                var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+                reIE.test(ua);
+                var fIEVersion = parseFloat(RegExp["$1"]);
+                IE9 = fIEVersion == 9.0;
+                IE10 = fIEVersion == 10.0;
+                IE11 = fIEVersion == 11.0;
+                if (IE9) {
+                    browser = "IE9";
+                }
+                if (IE10) {
+                    browser = "IE10";
+                }
+                if (IE11) {
+                    browser = "IE11";
+                }
+            } else if (/(Edge)/i.test(ua)) {
+                browser = "Edge";
+            } else if (/(Firefox)/i.test(ua)) {
+                browser = "Firefox";
+            } else if (window.opr != undefined) {
+                browser = "Opera";
+            } else if (/(Chrome)/i.test(ua) && window.chrome) {
+                browser = "Chrome";
+            } else if (/(Safari)/i.test(ua) && ua.indexOf("Version") != -1) {
+                browser = "Safari";
+            } else {
+                browser = "unknow";
+            };
+            return browser;
+        }
+        console.log(getBrowser());
+        var windowWidth = window.screen.width;
+        var windowHeight = window.screen.height;
+        console.log("屏幕分辨率为：" + windowWidth + " * " + windowHeight);
+        $.get('http://pv.sohu.com/cityjson?ie=utf-8',null, function (data) {
+            var ip = data['cip'];
+            var address = data['cname'];
+
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>

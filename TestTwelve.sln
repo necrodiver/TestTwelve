@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasonryJsTest", "MasonryJsT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootstrapTable", "BootstrapTable\BootstrapTable.csproj", "{C97067AE-5E69-4C3F-9064-12196CF8762B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetPcMessage", "GetPcMessage\GetPcMessage.csproj", "{7537AC27-1871-4FB9-B18B-F1A2783AC55C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C97067AE-5E69-4C3F-9064-12196CF8762B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C97067AE-5E69-4C3F-9064-12196CF8762B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C97067AE-5E69-4C3F-9064-12196CF8762B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7537AC27-1871-4FB9-B18B-F1A2783AC55C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7537AC27-1871-4FB9-B18B-F1A2783AC55C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7537AC27-1871-4FB9-B18B-F1A2783AC55C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7537AC27-1871-4FB9-B18B-F1A2783AC55C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
